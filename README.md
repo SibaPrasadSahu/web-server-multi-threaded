@@ -1,6 +1,14 @@
 Client-Server Project
 A simple client-server application using Java sockets for communication.
 
+![one](https://github.com/user-attachments/assets/5b9a5d75-0172-4829-93cd-263cc02b0dce)
+
+![two](https://github.com/user-attachments/assets/868ab1ed-7820-4a53-83d0-c00fd59bf814)
+
+![three](https://github.com/user-attachments/assets/810645b9-358f-40c2-a926-554e639aea97)
+
+![four](https://github.com/user-attachments/assets/305b31e4-06fb-497b-b937-b945449a4e83)
+
 Overview
 This project consists of two main components:
 
@@ -53,5 +61,3 @@ Enhance the server to handle a larger number of concurrent connections efficient
 Add more features like user authentication or data encryption.
 
 Feel free to modify this README to better suit your project's specific needs or additional features you might add.
-
-![one](https://github.com/user-attachments/assets/eaccb03d-9af0-4400-9358-892d28db2005)
