@@ -1,63 +1,34 @@
-Client-Server Project
-A simple client-server application using Java sockets for communication.
+Multithreaded Web Server with LRU Caching
 
-![one](https://github.com/user-attachments/assets/5b9a5d75-0172-4829-93cd-263cc02b0dce)
+A high-performance, multithreaded web server designed to efficiently handle concurrent requests. This server utilizes an LRU (Least Recently Used) caching strategy to optimize the retrieval of frequently accessed data, significantly improving response times.
 
-![two](https://github.com/user-attachments/assets/868ab1ed-7820-4a53-83d0-c00fd59bf814)
+Key Features
+Multithreading: Handles multiple client requests simultaneously using a thread pool.
 
-![three](https://github.com/user-attachments/assets/810645b9-358f-40c2-a926-554e639aea97)
+LRU Caching: Implements a Least Recently Used caching mechanism to store frequently accessed products, enhancing server performance.
 
-![four](https://github.com/user-attachments/assets/305b31e4-06fb-497b-b937-b945449a4e83)
+Scalability: Designed to scale with increasing traffic by efficiently managing resources.
 
-Overview
-This project consists of two main components:
+Real-world Application: Simulates a product information retrieval system, demonstrating practical use cases for caching in web applications.
 
-Client: Connects to the server, sends a product name, and receives the corresponding price.
+Technologies Used
+Java: Utilizes Java's robust multithreading capabilities and data structures.
 
-Server: Listens for incoming connections, processes client requests, and responds with product prices.
+Socket Programming: Employs socket programming for client-server communication.
 
-Features
-Multi-threaded Server: Handles multiple client connections concurrently using a fixed thread pool.
+LRU Cache Implementation: Custom implementation of an LRU cache using a doubly linked list and hashmap.
 
-Product Price Retrieval: The server maintains a map of products with their prices and returns the price for a given product name.
+Project Structure
+Server: Handles client requests and manages the LRU cache.
 
-Setup and Usage
-Prerequisites
-Java Development Kit (JDK) installed on your system.
+Client: Simulates client requests to the server.
 
-A compatible IDE or text editor for running Java programs.
+Getting Started
+Clone the repository.
 
-Running the Server
-Compile the Server.java file.
+Build and run the server.
 
-Run the Server class. The server will start listening on port 9999.
+Use the client application to test the server.
 
-The server will continuously accept client connections.
-
-Running the Client
-Compile the Client.java file.
-
-Run the Client class.
-
-Enter a product name when prompted (e.g., "a", "b", "c").
-
-The client will send the product name to the server and display the received price.
-
-Code Structure
-Client: Located in Client.java, this class establishes a connection to the server, sends a product name, and prints the server's response.
-
-Server: Located in Server.java, this class sets up a server socket, accepts client connections, and uses a thread pool to handle requests concurrently.
-
-Known Issues
-The server runs indefinitely until manually stopped.
-
-The client does not handle invalid server responses.
-
-Future Improvements
-Implement error handling for invalid product names and server errors.
-
-Enhance the server to handle a larger number of concurrent connections efficiently.
-
-Add more features like user authentication or data encryption.
-
-Feel free to modify this README to better suit your project's specific needs or additional features you might add.
+Contributions
+Contributions are welcome! Feel free to enhance the caching strategy, improve performance, or add new features.
