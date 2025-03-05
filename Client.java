@@ -12,7 +12,7 @@ public class Client {
             Socket sock = new Socket("127.0.0.1", 9999);
             System.out.println("Connected to server");
 
-            System.out.print("Enter product name: ");
+            System.out.print("Enter product name (a-z): ");
             String product = scanner.nextLine();
 
             try  {
@@ -37,4 +37,3 @@ public class Client {
         }
     }
 }
-
